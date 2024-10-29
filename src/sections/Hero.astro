@@ -1,0 +1,106 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<section
+  class="relative bg-hero bg-center bg-cover min-h-dvh overflow-hidden flex flex-col items-center justify-center text-white text-center px-5 py-20"
+>
+  <div class="relative max-w-screen-sm lg:max-w-screen-md">
+    <div class="z-10 opacity-0 translate-y-10 animate-fadeInUp">
+      <h1 class="text-6xl md:text-8xl lg:text-9xl font-black mb-10">
+        UX/UI Fest
+      </h1>
+      <p class="mb-4">
+        Tres increíbles talleres diseñados para sumergirte en el mundo del
+        diseño de experiencia de usuario e interfaces. Desde herramientas
+        innovadoras hasta técnicas de diseño que marcarán tendencia, cada taller
+        está pensado para que salgas con nuevas habilidades y mucha inspiración.
+      </p>
+      <p>
+        ¿Preparado para transformar tu visión del diseño de experiencia e
+        interfaz de usuario?
+      </p>
+    </div>
+    <img
+      class="absolute bottom-[110%] md:bottom-[120%] lg:bottom-full left-1/2 md:left-3/4 lg:left-full"
+      src="/uxuifest-sticker1.webp"
+      width="254"
+      height="254"
+      loading="eager"
+    />
+    <img
+      class="absolute top-[115%] md:top-[120%] lg:top-full left-2/3 lg:left-full"
+      src="/uxuifest-sticker2.webp"
+      width="233"
+      height="233"
+      loading="eager"
+    />
+    <img
+      class="absolute top-[130%] md:top-[150%] lg:top-1/2 right-2/3 lg:right-[108%]"
+      src="/uxuifest-sticker3.webp"
+      width="233"
+      height="233"
+      loading="eager"
+    />
+  </div>
+  <Button
+    text="Incríbete"
+    href="#inscribirse"
+    class="fixed top-5 left-5 md:left-1/2 md:-translate-x-1/2 z-50"
+  />
+</section>
+
+<style>
+  h1 {
+    text-shadow:
+      0 0 0 #5d4a86,
+      0 0 0 #1994a2;
+    animation: ts 0.5s ease-in-out 0.25s forwards;
+  }
+
+  @keyframes ts {
+    50% {
+      text-shadow:
+        5px 5px 0 #5d4a86,
+        5px 5px 0 #1994a2;
+    }
+    100% {
+      text-shadow:
+        5px 5px 0 #5d4a86,
+        8px 8px 0 #1994a2;
+    }
+  }
+
+  img:first-of-type {
+    transform: translate(-30vw, 110dvh);
+    animation: change 0.5s ease-in-out forwards;
+  }
+
+  @keyframes change {
+    to {
+      transform: translate(0, 0) rotate(8deg);
+    }
+  }
+
+  img:nth-of-type(2) {
+    transform: translate(-30vw, 34dvh);
+    animation: tons 0.55s ease-in-out 0.1s forwards;
+  }
+
+  @keyframes tons {
+    to {
+      transform: translate(0, 0) rotate(5deg);
+    }
+  }
+
+  img:last-child {
+    transform: translate(34vw, 55dvh);
+    animation: exp 0.5s ease-in-out 0.1s forwards;
+  }
+
+  @keyframes exp {
+    to {
+      transform: translate(0, 0) rotate(-13deg);
+    }
+  }
+</style>
