@@ -1,0 +1,53 @@
+form {
+  padding: 1em;
+  border-radius: 1em;
+  border: 1px solid hsl(0 0% 0% / 0.1);
+  box-shadow: 0 0 0 1em hsl(0 0% 0% / 0.01);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  accent-color: #29ede7;
+}
+
+fieldset {
+  max-width: initial !important;
+}
+
+label {
+  line-height: 2;
+}
+
+input,
+select {
+  border: 1px solid hsl(0 0% 0% / 0.1);
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+}
+
+input {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-inline-end: 0.5em;
+}
+
+input[type="submit"] {
+  background-color: #29ede7;
+}
+
+input[type="submit"]:hover {
+  filter: contrast(200%);
+}
+
+select {
+  appearance: none;
+}
+
+.hs-input:not([type="checkbox"]) {
+  width: 100% !important;
+}
+
+.hs-form-required {
+  color: rgb(255, 0, 0);
+  margin-inline-start: 0.25em;
+}
