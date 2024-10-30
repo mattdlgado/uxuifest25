@@ -2,7 +2,7 @@
 import Button from "../components/Button.astro";
 import Logo from "../components/Logo.astro";
 import Brushes from "../components/stickers/Brushes.astro";
-import Curiosity from "../components/stickers/Curiosity.astro";
+import Experience from "../components/stickers/Experience.astro";
 import TonsOfUx from "../components/stickers/TonsOfUx.astro";
 ---
 
@@ -31,8 +31,8 @@ import TonsOfUx from "../components/stickers/TonsOfUx.astro";
     <Brushes
       class="brushes-sticker absolute bottom-[110%] lg:bottom-full left-1/2 md:left-3/4 lg:left-full"
     />
-    <Curiosity
-      class="curiosity-sticker absolute top-[115%] md:top-[130%] lg:top-1/2 right-2/3 lg:right-[115%]"
+    <Experience
+      class="experience-sticker absolute top-[115%] md:top-[130%] lg:top-1/2 right-2/3 lg:right-[110%]"
     />
     <TonsOfUx
       class="tou-sticker absolute top-[110%] md:top-[120%] lg:top-full left-2/3 lg:left-full"
@@ -77,13 +77,13 @@ import TonsOfUx from "../components/stickers/TonsOfUx.astro";
     }
   }
 
-  :global(.curiosity-sticker) {
+  :global(.experience-sticker) {
     transform: translate(34vw, 55dvh);
-    animation: curiosity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.1s
+    animation: experience 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.1s
       forwards;
   }
 
-  @keyframes curiosity {
+  @keyframes experience {
     to {
       transform: translate(0, 0) rotate(-13deg);
     }
