@@ -1,0 +1,66 @@
+.hbspt-form {
+  @apply p-5  rounded-lg border border-neutral-300 backdrop-blur accent-cyan-450 h-full grid place-items-center;
+  box-shadow: 0 0 0 1em hsl(0 0% 0% / 0.01);
+}
+
+form {
+  @apply w-full;
+}
+
+fieldset {
+  max-width: initial !important;
+  margin-block-end: 1em !important;
+}
+
+.form-columns-2 {
+  @apply flex flex-col md:flex-row gap-[2%];
+}
+
+.form-columns-2 > * {
+  width: 100% !important;
+}
+
+label {
+  @apply leading-loose;
+}
+
+.input {
+  margin-right: 0 !important;
+}
+
+input,
+select {
+  @apply border border-neutral-300 rounded-lg py-2 px-4;
+}
+
+input {
+  @apply w-full;
+}
+
+input[type="checkbox"] {
+  @apply me-2;
+}
+
+input[type="submit"] {
+  @apply bg-cyan-450;
+}
+
+input[type="submit"]:hover {
+  filter: contrast(200%);
+}
+
+select {
+  appearance: none;
+}
+
+.hs-input:not([type="checkbox"]) {
+  width: 100% !important;
+}
+
+.hs-form-required {
+  @apply text-red-450 ms-1;
+}
+
+.hs-main-font-element {
+  @apply text-neutral-400;
+}

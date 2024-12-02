@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Diseñando con datos en Figma. El poder de las APIs.",
+    "description": "¡No pierdas la oportunidad de aprender a diseñar de manera más inteligente con Figma y APIs!",
+    "features": ["Workshop", "Híbrido", "22 enero 2025", "18:30"],
+    "speakers": [
+      {
+        "name": "Raúl Marín",
+        "cargo": "Director del Bootcamp en Diseño UX/UI",
+        "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/raul_marin.webp",
+        "logo": [
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/immune-logo.svg",
+          "IMMUNE"
+        ]
+      },
+      {
+        "name": "Raúl Marín",
+        "cargo": "Director del Bootcamp en Diseño UX/UI",
+        "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/raul_marin.webp",
+        "logo": [
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/immune-logo.svg",
+          "IMMUNE"
+        ]
+      }
+    ],
+    "content": "En este workshop de 2 horas, aprenderás a llevar tus habilidades de diseño en Figma al siguiente nivel utilizando datos en tiempo real. Raúl Marín te dará el contexto actual sobre el diseño con datos, compartiendo ejemplos prácticos, recursos útiles y demostraciones en Figma. Además, contaremos con Jorge Casals, Co-Founder de Data Pocket y CMO en OVIXIA, quienes han desarrollado este potente plugin. Jorge te enseñará cómo integrar datos de APIs directamente en tus diseños de manera sencilla y eficiente utilizando Data Pocket.",
+    "details": ["Paragraph", "Paragraph"],
+    "button": ["#inscribete", "Apúntate"]
+  }
+]

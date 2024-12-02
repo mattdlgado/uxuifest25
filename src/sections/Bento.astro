@@ -1,0 +1,16 @@
+---
+import Form from "../components/Form.astro";
+import Speakers from "../components/Speakers.astro";
+import Talleres from "../components/Talleres.astro";
+---
+
+<section
+  id="inscribete"
+  class="container py-20 grid gap-10 lg:grid-cols-2 lg:grid-rows-[1fr_auto]"
+>
+  <div class="row-span-2">
+    <Form />
+  </div>
+  <Talleres />
+  <Speakers />
+</section>

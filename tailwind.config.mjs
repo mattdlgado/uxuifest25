@@ -3,12 +3,28 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      backgroundImage: {
-        hero: "url('uxuifest-background.webp')",
-      },
       animation: {
         fadeIn: "fadeIn 0.5s ease-in-out forwards",
         fadeInUp: "fadeInUp 0.5s ease-in-out forwards",
+      },
+      backgroundImage: {
+        hero: "url('uxuifest-background.webp')",
+      },
+      colors: {
+        cyan: {
+          450: "#29EDE7",
+        },
+        purple: {
+          450: "#AD60FF",
+          750: "#5d4a86",
+        },
+        red: {
+          450: "#FF7262",
+        },
+      },
+      container: {
+        center: true,
+        padding: "20px",
       },
       keyframes: {
         fadeIn: {
@@ -22,10 +38,6 @@ export default {
             transform: "translateY(0)",
           },
         },
-      },
-      container: {
-        center: true,
-        padding: "20px",
       },
     },
   },

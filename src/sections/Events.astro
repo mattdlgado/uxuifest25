@@ -1,0 +1,69 @@
+---
+import Button from "../components/Button.astro";
+import events from "../data/events.json";
+---
+
+<section id="inscribete" class="container py-20 grid gap-20">
+  {
+    events.map((item) => (
+      <div class="grid gap-5 md:grid-cols-3">
+        <div class="md:row-span-2 flex flex-col gap-5">
+          <div class="card h-full">
+            <h2>{item.title}</h2>
+            <p class="mb-4 text-balance">{item.description}</p>
+            <p class="flex flex-wrap gap-1">
+              {item.features.map((item) => (
+                <span class="badge">{item}</span>
+              ))}
+            </p>
+          </div>
+          <Button
+            href={item.button[0]}
+            text={item.button[1]}
+            class="text-center"
+          />
+        </div>
+        <div class="md:col-span-2 flex flex-col lg:flex-row gap-5">
+          {item.speakers.map((speaker) => (
+            <div class="card w-full flex gap-5 md:items-center">
+              <img
+                src={speaker.photo}
+                alt={speaker.name}
+                width="80"
+                height="80"
+                loading="lazy"
+                class="w-20 h-20 object-cover rounded-full"
+              />
+              <div class="w-full flex flex-col gap-4 md:flex-row md:justify-between">
+                <div>
+                  <h3>
+                    <strong>{speaker.name}</strong>
+                  </h3>
+                  <p>{speaker.cargo}</p>
+                </div>
+                <img
+                  src={speaker.logo[0]}
+                  alt={speaker.logo[1]}
+                  width="80"
+                  height="40"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="card md:col-span-2">
+          <p class="mb-4">{item.content}</p>
+          <details>
+            <summary>¿Qué aprenderás?</summary>
+            <ol class="list-decimal ps-5 py-2">
+              {item.details.map((detail) => (
+                <li>{detail}</li>
+              ))}
+            </ol>
+          </details>
+        </div>
+      </div>
+    ))
+  }
+</section>

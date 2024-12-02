@@ -48,6 +48,10 @@ import TonsOfUx from "../components/stickers/TonsOfUx.astro";
 <style>
   h1 {
     text-shadow:
+      -5px 0 #333,
+      0 5px #333,
+      5px 0 #333,
+      0 -5px #333,
       0 0 0 #5d4a86,
       0 0 0 #1994a2;
     animation: ts 0.5s ease-in-out 0.25s forwards;
@@ -56,13 +60,21 @@ import TonsOfUx from "../components/stickers/TonsOfUx.astro";
   @keyframes ts {
     50% {
       text-shadow:
-        5px 5px 0 #5d4a86,
-        5px 5px 0 #1994a2;
+        -5px 0 #333,
+        0 5px #333,
+        5px 0 #333,
+        0 -5px #333,
+        8px 8px 0 #5d4a86,
+        13px 13px 0 #1994a2;
     }
     100% {
       text-shadow:
-        5px 5px 0 #5d4a86,
-        8px 8px 0 #1994a2;
+        -5px 0 #333,
+        0 5px #333,
+        5px 0 #333,
+        0 -5px #333,
+        8px 8px 0 #5d4a86,
+        13px 13px 0 #1994a2;
     }
   }
 
