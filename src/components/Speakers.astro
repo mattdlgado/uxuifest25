@@ -1,34 +1,32 @@
+---
+const images = [
+  ["raul_marin", "Raúl Marín"],
+  ["tomas_modrono", "Tomás Modroño"],
+  ["santiago_fernandez", "Santy Fernández"],
+];
+---
+
 <div class="card bg-purple-450 text-neutral-50">
   <div class="flex flex-col md:flex-row md:gap-5 md:justify-between mb-4">
     <h2>Impartidos por</h2>
     <div class="flex-shrink-0 flex">
-      <img
-        src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/raul_marin.webp"
-        alt="Talleres"
-        width="80"
-        height="80"
-        class="object-cover w-20 h-20 rounded-full border-4 border-purple-450 -me-4"
-      />
-      <img
-        src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/olga_munoz.webp"
-        alt="Talleres"
-        width="80"
-        height="80"
-        class="object-cover w-20 h-20 rounded-full border-4 border-purple-450 -me-4"
-      />
-      <img
-        src="https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/santiago_fernandez.webp"
-        alt="Talleres"
-        width="80"
-        height="80"
-        class="object-cover w-20 h-20 rounded-full border-4 border-purple-450"
-      />
+      {
+        images.map((image) => (
+          <img
+            src={`https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/${image[0]}.webp`}
+            alt={image[1]}
+            width="80"
+            height="80"
+            class="object-cover w-20 h-20 rounded-full border-4 border-purple-450 -me-4"
+          />
+        ))
+      }
     </div>
   </div>
   <p>
-    Raúl Marín, Director del Bootcamp en Diseño UX/UI en IMMUNE; Olga Muñoz,
-    Profesora en IMMUNE y Santiago Fernández, Product Designer en The TMRW
-    Foundation.
+    Raúl Marín, Director del Bootcamp en Diseño UX/UI en IMMUNE; Tomás Modroño,
+    Head of UX Design en INteractius y Santiago Fernández, Product Designer en
+    The TMRW Foundation.
   </p>
 </div>
 

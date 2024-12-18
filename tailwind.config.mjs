@@ -8,7 +8,7 @@ export default {
         fadeInUp: "fadeInUp 0.5s ease-in-out forwards",
       },
       backgroundImage: {
-        hero: "url('uxuifest-background.webp')",
+        hero: "url('images/uxuifest-background.webp')",
       },
       colors: {
         cyan: {

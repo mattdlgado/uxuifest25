@@ -1,3 +1,13 @@
+---
+const images = [
+  "talleres-1",
+  "talleres-2",
+  "talleres-3",
+  "talleres-4",
+  "talleres-5",
+];
+---
+
 <div class="card bg-red-450 text-neutral-50 overflow-hidden flex flex-col">
   <h2>Talleres</h2>
   <p class="mb-4">
@@ -9,27 +19,17 @@
   </p>
   <div class="swiper talleresSwiper h-full cursor-move">
     <div class="swiper-wrapper flex h-full">
-      <img
-        src="https://immune.institute/wp-content/uploads/2024/08/2024.06.20-Immune-Institute3_websize.webp"
-        alt="Talleres"
-        width="256"
-        height="256"
-        class="swiper-slide object-cover rounded-lg"
-      />
-      <img
-        src="https://immune.institute/wp-content/uploads/2024/08/2024.06.20-Immune-Institute3_websize.webp"
-        alt="Talleres"
-        width="256"
-        height="256"
-        class="swiper-slide object-cover rounded-lg"
-      />
-      <img
-        src="https://immune.institute/wp-content/uploads/2024/08/2024.06.20-Immune-Institute3_websize.webp"
-        alt="Talleres"
-        width="256"
-        height="256"
-        class="swiper-slide object-cover rounded-lg"
-      />
+      {
+        images.map((image) => (
+          <img
+            src={`/images/${image}.webp`}
+            alt="Talleres"
+            width="256"
+            height="256"
+            class="swiper-slide object-cover rounded-lg"
+          />
+        ))
+      }
     </div>
   </div>
 </div>
