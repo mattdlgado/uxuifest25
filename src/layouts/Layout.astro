@@ -1,21 +1,30 @@
 ---
+import SEO from "../components/SEO.astro";
 import "../lib/css/form.css";
 
 interface Props {
   title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  robots: string;
+  img: string;
 }
 
-const { title } = Astro.props;
+const { title, description, keywords, canonical, robots, img } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
+    <SEO
+      title={title}
+      description={description}
+      keywords={keywords}
+      canonical={canonical}
+      robots={robots}
+      img={img}
+    />
   </head>
   <body class="bg-neutral-50 text-neutral-950 font-sans leading-relaxed">
     <slot />
@@ -33,7 +42,8 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-  h2 {
+  h2,
+  .h2 {
     @apply text-4xl font-bold mb-4 text-balance;
   }
 

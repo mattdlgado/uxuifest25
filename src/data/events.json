@@ -1,7 +1,7 @@
 [
   {
-    "title": "“¡Mañana empiezo!” Propósitos de año nuevo para el Designer del futuro",
-    "description": "Qué hacer y dejar de hacer este año.",
+    "title": "“¡Mañana empiezo!” Propósitos de año nuevo para el Designer del futuro. Qué hacer y dejar de hacer este año.",
+    "description": "",
     "features": ["Workshop", "Híbrido", "29 enero 2025", "18:30"],
     "speakers": [
       {
@@ -21,10 +21,19 @@
           "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/tmrw-logo.webp",
           "The TMRW Foundation"
         ]
+      },
+      {
+        "name": "Raúl Marín",
+        "cargo": "UX/UI Design Area Director",
+        "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/raul_marin.webp",
+        "logo": [
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/immune-logo.svg",
+          "IMMUNE"
+        ]
       }
     ],
     "content": "Decálogo de buenos propósitos para el Designer de 2025",
-    "details": ["Paragraph", "Paragraph"],
+    "details": [],
     "button": ["#inscribete", "Apúntate"]
   }
 ]
