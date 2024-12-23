@@ -1,5 +1,7 @@
 ---
-import SEO from "../components/SEO.astro";
+import ABody from "../analytics/ABody.astro";
+import AHead from "../analytics/AHead.astro";
+import SEO from "../analytics/SEO.astro";
 import "../lib/css/form.css";
 
 interface Props {
@@ -25,31 +27,10 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       robots={robots}
       img={img}
     />
-    <!-- Google Tag Manager -->
-    <script is:inline>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5DPST5T");
-    </script>
-    <!-- End Google Tag Manager -->
+    <AHead />
   </head>
   <body class="bg-neutral-50 text-neutral-950 font-sans leading-relaxed">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5DPST5T"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"></iframe></noscript
-    >
-    <!-- End Google Tag Manager (noscript) -->
+    <ABody />
     <slot />
     <script
       is:inline
