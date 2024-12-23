@@ -25,6 +25,34 @@ const { title, description, keywords, canonical, robots, img } = Astro.props;
       robots={robots}
       img={img}
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TY7XPLW6EK"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TY7XPLW6EK");
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-797259707"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-797259707");
+    </script>
     <!-- Google Tag Manager -->
     <script is:inline>
       (function (w, d, s, l, i) {
