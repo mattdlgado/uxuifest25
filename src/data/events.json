@@ -1,5 +1,33 @@
 [
   {
+    "title": "Diseño de chatbots inteligentes: Del UX al prototipo funcional.",
+    "description": "",
+    "features": ["Workshop", "Híbrido", "22 enero 2025", "18:30"],
+    "speakers": [
+      {
+        "name": "Olga Muñoz Ramos",
+        "cargo": "Lead Teacher",
+        "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/olga_munoz.webp",
+        "logo": [
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/immune-logo.svg",
+          "IMMUNE"
+        ]
+      },
+      {
+        "name": "Raúl Marín",
+        "cargo": "UX/UI Design Area Director",
+        "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/raul_marin.webp",
+        "logo": [
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/immune-logo.svg",
+          "IMMUNE"
+        ]
+      }
+    ],
+    "content": "Nos pondremos manos a la obra para diseñar un chatbot. Hablaremos de las mejores prácticas de UX para crear interacciones claras y centradas en el usuario. Crearemos un prototipo funcional con Voiceflow, integrando IA y conectándolo a una web. Nos preparamos juntos para el 2025",
+    "details": [],
+    "button": ["#inscribete", "Apúntate"]
+  },
+  {
     "title": "“¡Mañana empiezo!” Propósitos de año nuevo para el Designer del futuro. Qué hacer y dejar de hacer este año.",
     "description": "",
     "features": ["Workshop", "Híbrido", "29 enero 2025", "18:30"],
