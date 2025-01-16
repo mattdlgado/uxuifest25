@@ -37,7 +37,7 @@
         "cargo": "Head of UX Design",
         "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/tomas_modrono.webp",
         "logo": [
-          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/interactius-icon.svg",
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/interactius-logo.webp",
           "Interactius"
         ]
       },
@@ -67,7 +67,7 @@
   {
     "title": "El Futuro del diseño con Freepik IA",
     "description": "",
-    "features": ["Workshop", "Híbrido", "5 enero 2025", "18:30"],
+    "features": ["Workshop", "Híbrido", "5 febrero 2025", "18:30"],
     "speakers": [
       {
         "name": "Sofia López",
@@ -76,6 +76,15 @@
         "logo": [
           "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/freepik-logo.svg",
           "Freepik"
+        ]
+      },
+      {
+        "name": "Santy Fernández",
+        "cargo": "Product Designer",
+        "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/santiago_fernandez.webp",
+        "logo": [
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/tmrw-logo.webp",
+          "The TMRW Foundation"
         ]
       },
       {
