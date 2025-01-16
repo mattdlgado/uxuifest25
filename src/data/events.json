@@ -63,5 +63,33 @@
     "content": "¿Qué deberías empezar a hacer (y dejar de hacer) para destacar en 2025? Durante 90 minutos llenos de dinamismo e interacción, tres expertos de renombre compartirán 10 claves imprescindibles para potenciar tu carrera y anticiparte a las tendencias del sector.",
     "details": [],
     "button": ["#inscribete", "Apúntate"]
+  },
+  {
+    "title": "El Futuro del diseño con Freepik IA",
+    "description": "",
+    "features": ["Workshop", "Híbrido", "5 enero 2025", "18:30"],
+    "speakers": [
+      {
+        "name": "Sofia López",
+        "cargo": "Head of UX Design",
+        "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/sofia_lopez.webp",
+        "logo": [
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/freepik-logo.svg",
+          "Freepik"
+        ]
+      },
+      {
+        "name": "Raúl Marín",
+        "cargo": "UX/UI Design Area Director",
+        "photo": "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/people/raul_marin.webp",
+        "logo": [
+          "https://publicimmuneassets.s3.eu-west-1.amazonaws.com/logos/immune-logo.svg",
+          "IMMUNE"
+        ]
+      }
+    ],
+    "content": "Sumérgete en este taller interactivo donde aprenderás a utilizar las herramientas de Freepik IA para diseñar imágenes, videos, audio y estilos únicos ¡todo en el mismo sitio!. Experimenta con la tecnología y lleva tu creatividad al siguiente nivel. ¡Descubre todo lo que puedes crear!",
+    "details": [],
+    "button": ["#inscribete", "Apúntate"]
   }
 ]
